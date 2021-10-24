@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+    <title>Чатик</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+</head>
+<body>
+<div class="wrapper">
+    <div class="menu">
+        <p class="avatar"><img src="https://datavyhoda.ru/wp-content/uploads/2019/02/avatar-3-data-vyhoda.jpg" width="80" height="80"alt="Avatar"></p>
+        <h1 class="welcome"><b>Пользователь </b></h1>
+    </div>
+    <div class="chatbox">
+        <div class ="mes_box">
+            <div class="mes">
+                <div class="message"></div>
+            </div>
+        </div>
+    </div>
+    <template id="mes_template">
+        <div class="mes">
+            <div class = message></div>
+        </div>
+    </template>
+    <div class="input">
+        <label>
+            <input class="usermsg" placeholder = "Напишите сообщение...">
+        </label>
+        <div class="button">
+            <button id="button" type="button" onclick="Click()">Отправить</button>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
